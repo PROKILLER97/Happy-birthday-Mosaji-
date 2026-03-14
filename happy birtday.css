@@ -1,7 +1,7 @@
 body{
   margin:0;
   overflow:hidden;
-  background:#111;
+  background:#000;
   font-family:Verdana;
 }
 
@@ -9,74 +9,58 @@ canvas{
   position:absolute;
   top:0;
   left:0;
-  z-index:10;
+  z-index:1;
 }
 
-/* LEFT PHOTO */
-
-#photo-left{
+.left-photo{
   position:absolute;
-  left:40px;
+  left:60px;
   top:50%;
   transform:translateY(-50%);
-  width:180px;
-  height:220px;
-  object-fit:cover;
-  border-radius:12px;
-  border:4px solid white;
-  box-shadow:0 0 20px rgba(255,255,255,0.6);
+  width:220px;
+  border-radius:20px;
+  box-shadow:0 0 25px white;
   z-index:2;
 }
 
-/* RIGHT PHOTO */
-
-#photo-right{
+.right-photo{
   position:absolute;
-  right:40px;
+  right:60px;
   top:50%;
   transform:translateY(-50%);
-  width:180px;
-  height:220px;
-  object-fit:cover;
-  border-radius:12px;
-  border:4px solid white;
-  box-shadow:0 0 20px rgba(255,255,255,0.6);
+  width:220px;
+  border-radius:20px;
+  box-shadow:0 0 25px white;
   z-index:2;
 }
 
-/* MESSAGE */
-
-#from-message{
+.from-text{
   position:absolute;
   bottom:40px;
   width:100%;
   text-align:center;
-  font-size:22px;
   color:white;
-  text-shadow:0 0 10px rgba(255,255,255,0.8);
-  letter-spacing:1px;
-  z-index:20;
+  font-size:22px;
+  text-shadow:0 0 10px white;
+  z-index:3;
 }
 
-/* MOBILE SCALING */
+/* Mobile scaling */
 
 @media (max-width:768px){
 
-  #photo-left{
-    left:10px;
-    width:110px;
-    height:150px;
-  }
+.left-photo{
+  width:140px;
+  left:15px;
+}
 
-  #photo-right{
-    right:10px;
-    width:110px;
-    height:150px;
-  }
+.right-photo{
+  width:140px;
+  right:15px;
+}
 
-  #from-message{
-    font-size:16px;
-    bottom:20px;
-  }
+.from-text{
+  font-size:16px;
+}
 
 }
