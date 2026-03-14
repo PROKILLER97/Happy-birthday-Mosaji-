@@ -3,18 +3,6 @@ canvas {
   top: 0;
   left: 0;
 }
-p {
-  margin: 0 0;
-  position: absolute;
-  font: 16px Verdana;
-  color: #eee;
-  height: 25px;
-  top: calc(100vh - 30px);
-  text-shadow: 0 0 2px white;
-}
-p a {
-  text-decoration: none;
-  color: #aaa;
 
 body {
   margin: 0;
@@ -22,8 +10,6 @@ body {
   background: #111;
   font-family: Verdana;
 }
-span {
-  font-size: 11px;
 
 /* LEFT PHOTO */
 
@@ -38,8 +24,6 @@ span {
   box-shadow: 0 0 20px rgba(255,255,255,0.6);
   z-index: 5;
 }
-p > a:first-of-type {
-  font-size: 20px;
 
 /* RIGHT PHOTO */
 
@@ -54,8 +38,6 @@ p > a:first-of-type {
   box-shadow: 0 0 20px rgba(255,255,255,0.6);
   z-index: 5;
 }
-body {
-  overflow: hidden;
 
 /* FROM MESSAGE */
 
